@@ -8,7 +8,7 @@ function App(){
   
   const addTask =()=> 
   { 
-    if (newTask.trim() === '') return; // Check if the newTask is not empty or only contains whitespaces
+    if (newTask.trim() === '') return; // Check if the newTask is not empty or only contains whitespace
     setTasks([...tasks, { text: newTask, completed: false }]); // Create a new task object and add it to the tasks array
     setnewTask(''); // Reset the newTask state to an empty string, clearing the input field
   };
